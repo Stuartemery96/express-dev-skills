@@ -1,8 +1,19 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: lightgray;
 }
 
 a {
-  color: #00B7FF;
+  color: blue;
+}
+
+h3,
+p {
+  display: inline-block;
+}
+
+p {
+  color: gold;
 }
