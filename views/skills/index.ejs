@@ -9,6 +9,16 @@
 
 <body>
   <h1>I Got Skills!🔥</h1>
+  <ul>
+    <% skills.forEach(function(skl) { %>
+      <li>
+        <a href="/skills/<%= skl.id %>">
+          <%= skl.skill %>
+            ✅
+        </a>
+      </li>
+      <% }); %>
+  </ul>
 </body>
 
 </html>
