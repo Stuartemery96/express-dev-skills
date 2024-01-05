@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  <title>My Coding Skills</title>
-</head>
-
-<body>
-  <h1>I Got Skills!🔥</h1>
+<a href="/">Home</a>
+<%- include('../partials/header') %>
   <ul>
     <% skills.forEach(function(skl) { %>
       <li>
+        <form action="/skills/<%= skl.id %>?_method=DELETE" method="POST" class="delete-form">
+          <button type="submit">X</button>
+        </form>
         <a href="/skills/<%= skl.id %>">
           <%= skl.skill %>
             ✅
@@ -20,6 +13,5 @@
       </li>
       <% }); %>
   </ul>
-</body>
-
-</html>
+  <a href="/skills/new">Add New Skill</a>
+  <%- include('../partials/footer') %>

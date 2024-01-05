@@ -1,0 +1,10 @@
+<a href="/">Home</a>
+|
+<a href="/skills">Skills</a>
+<%- include('../partials/header') %>
+  <form action="/skills" method="POST">
+    <input type="text" name="skill">
+    <input type="text" name="desc">
+    <button type="submit">Save Skill</button>
+  </form>
+  <%- include('../partials/footer') %>
